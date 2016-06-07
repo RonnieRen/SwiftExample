@@ -1,4 +1,4 @@
 # Require version 3.0 or later
-github "ReactiveCocoa/ReactiveCocoa"  "e5ca8c03a0feca45acd40b3453fdea6994dc0517"
+github "ReactiveCocoa/ReactiveCocoa" 
 
 

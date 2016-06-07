@@ -11,7 +11,9 @@ import ReactiveCocoa
 
 
 
-
+protocol ValueFormattable {
+    func toValueString() -> String
+}
 
 class PropertyFormatter<T>  {
     func formatProperty(value: T?) -> String {
@@ -57,7 +59,7 @@ class UUIDPropertyFormatter: PropertyFormatter<NSUUID> {
 }
 
 
-struct ValueAndFormatterPair<T> {
+struct ValueAndFormatterPair<T> : ValueFormattable {
     let value: MutableProperty<T?>
     let formatter: PropertyFormatter<T>
     
@@ -65,25 +67,98 @@ struct ValueAndFormatterPair<T> {
         self.value = MutableProperty(value)
         self.formatter = formatter
     }
+    func toValueString() -> String {
+        return formatter.formatProperty(value.value)
+    }
 }
 
 
-enum PropertyValueType {
+enum PropertyValue {
     
     case Text(ValueAndFormatterPair<String>)
     case UUID(ValueAndFormatterPair<NSUUID>)
     case Date(ValueAndFormatterPair<NSDate>)
+    
+    static func textValue(val: String,formatter: PropertyFormatter<String>) -> PropertyValue {
+        return PropertyValue.Text(ValueAndFormatterPair<String>(value: val, formatter: formatter))
+    }
+    
+    static func dateValue(val: NSDate, formatter: PropertyFormatter<NSDate>) -> PropertyValue {
+        return PropertyValue.Date(ValueAndFormatterPair<NSDate>(value: val, formatter: formatter))
+    }
+    
+    static func uuidValue(val: NSUUID, formatter: PropertyFormatter<NSUUID>) -> PropertyValue {
+        return PropertyValue.UUID(ValueAndFormatterPair<NSUUID>(value: val, formatter: formatter))
+    }
+    
+    
+    func valueFormattable() -> ValueFormattable {
+        switch self {
+        case.Text(let pair):
+            return pair
+        case.Date(let pair):
+            return pair
+        case.UUID(let pair):
+            return pair
+        }
+    }
+    
+//    func toValueString() -> String {
+//        switch self {
+//        case .Text(let val):
+//            return val.formatter.formatProperty(val.value.value)
+//
+//        case .Date(let val):
+//            return val.formatter.formatProperty(val.value.value)
+//
+//        case .UUID(let val):
+//            return val.formatter.formatProperty(val.value.value)
+//        }
+//    }
+    
+    
+//    func toValueStirngDuringEditing() -> String {
+//        guard let pair = self.getAssociatedValue() else {
+//            return ""
+//        }
+//        
+//        return pair.formatter.formatProperty(pair.value)
+//    }
+//    
+//    
+//    private func getAssociatedValue<T>() -> ValueAndFormatterPair<T> {
+//        switch self {
+//        case .Text(let pair):
+//            return pair
+//        case .UUID(let pair):
+//            return pair
+//        case .Date(let pair):
+//            return pair
+//        }
+//    }
 }
+
+extension PropertyValue: ValueFormattable {
+    func toValueString() -> String {
+        return self.valueFormattable().toValueString()
+    }
+}
+
 
 class Property {
     
     let name: String
-    let valueType: PropertyValueType
+    let value: PropertyValue
+    let valueStr: String
     
-    init(name: String, valType: PropertyValueType) {
+    init(name: String, val: PropertyValue) {
         self.name = name
-        self.valueType = valType
+        self.value = val
+        self.valueStr = val.toValueString()
     }
+    
+    
+    
     
 }
 

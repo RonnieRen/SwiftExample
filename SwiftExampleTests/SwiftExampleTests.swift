@@ -2,12 +2,11 @@
 //  SwiftExampleTests.swift
 //  SwiftExampleTests
 //
-//  Created by RonnieRen on 12/13/15.
-//  Copyright © 2015 RonnieRen. All rights reserved.
+//  Created by RonnieRen on 3/30/16.
+//  Copyright © 2016 RonnieRen. All rights reserved.
 //
 
 import XCTest
-@testable import SwiftExample
 
 class SwiftExampleTests: XCTestCase {
     
