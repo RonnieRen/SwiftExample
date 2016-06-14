@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import SwiftExample
+
 
 class SwiftExampleTests: XCTestCase {
     
@@ -23,6 +25,10 @@ class SwiftExampleTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let cell = UICollectionViewCell()
+        
+        
     }
     
     func testPerformanceExample() {
@@ -31,5 +37,7 @@ class SwiftExampleTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    
     
 }

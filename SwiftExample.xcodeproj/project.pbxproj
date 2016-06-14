@@ -16,6 +16,7 @@
 		8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838080941C1DA6E0000AD4EB /* PropertyTest.swift */; };
 		838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 838080651C1D5B95000AD4EB /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8380807E1C1D6087000AD4EB /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380807D1C1D6087000AD4EB /* Property.swift */; };
+		83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		838080731C1D5B95000AD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8380807D1C1D6087000AD4EB /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Generic/Property.swift; sourceTree = "<group>"; };
 		838080941C1DA6E0000AD4EB /* PropertyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTest.swift; sourceTree = "<group>"; };
+		83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Generic/Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8380807D1C1D6087000AD4EB /* Property.swift */,
+				83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */,
 			);
 			name = Generic;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8380807E1C1D6087000AD4EB /* Property.swift in Sources */,
+				83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +443,7 @@
 				8350BE3B1CABA65800CBC398 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8380805C1C1D5B95000AD4EB /* Build configuration list for PBXProject "SwiftExample" */ = {
 			isa = XCConfigurationList;
