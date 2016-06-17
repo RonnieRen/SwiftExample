@@ -36,15 +36,6 @@ extension ColorCodedElement where Self: UIView {
 }
 
 
-//extension ColorCodedElement where Self: UITableViewCell {
-//    
-//   
-//}
-//
-//
-//extension ColorCodedElement where Self: UICollectionViewCell {
-//    
-//}
 
 
 extension UICollectionViewCell: ColorCodedElement {
