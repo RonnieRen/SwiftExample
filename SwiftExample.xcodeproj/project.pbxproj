@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8301484D1D1588AE004675C5 /* Result.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8335FC281CAB850900E8FD78 /* Result.framework */; };
+		8301484E1D1588B3004675C5 /* ReactiveCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */; };
+		830792581D14527900F17A72 /* ProtocolItemInArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830792571D14527900F17A72 /* ProtocolItemInArray.swift */; };
+		8307925A1D145A1500F17A72 /* ProtocolItemInArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */; };
 		8335FC291CAB850900E8FD78 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335FC281CAB850900E8FD78 /* Result.framework */; };
 		8350BE341CABA65800CBC398 /* SwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */; };
-		8350BE3E1CABA8B400CBC398 /* Result.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8335FC281CAB850900E8FD78 /* Result.framework */; };
-		8350BE3F1CABA8B400CBC398 /* ReactiveCocoa.framework in Resources */ = {isa = PBXBuildFile; fileRef = 8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */; };
 		8350BE411CABA90300CBC398 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */; };
-		8350BE431CABAD0900CBC398 /* SwiftExample.framework in Resources */ = {isa = PBXBuildFile; fileRef = 838080621C1D5B95000AD4EB /* SwiftExample.framework */; };
 		8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838080941C1DA6E0000AD4EB /* PropertyTest.swift */; };
 		838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 838080651C1D5B95000AD4EB /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8380807E1C1D6087000AD4EB /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380807D1C1D6087000AD4EB /* Property.swift */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830792571D14527900F17A72 /* ProtocolItemInArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProtocolItemInArray.swift; path = Generic/ProtocolItemInArray.swift; sourceTree = "<group>"; };
+		830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolItemInArrayTests.swift; sourceTree = "<group>"; };
 		8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		8335FC281CAB850900E8FD78 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		8350BE311CABA65800CBC398 /* SwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,8 +41,6 @@
 		838080621C1D5B95000AD4EB /* SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838080651C1D5B95000AD4EB /* SwiftExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExample.h; sourceTree = "<group>"; };
 		838080671C1D5B95000AD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		838080711C1D5B95000AD4EB /* SwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExampleTests.swift; sourceTree = "<group>"; };
-		838080731C1D5B95000AD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8380807D1C1D6087000AD4EB /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Generic/Property.swift; sourceTree = "<group>"; };
 		838080941C1DA6E0000AD4EB /* PropertyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTest.swift; sourceTree = "<group>"; };
 		83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Generic/Protocol.swift; sourceTree = "<group>"; };
@@ -65,24 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8350BE321CABA65800CBC398 /* SwiftExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */,
-				8350BE351CABA65800CBC398 /* Info.plist */,
-			);
-			path = SwiftExampleTests;
-			sourceTree = "<group>";
-		};
 		838080581C1D5B95000AD4EB = {
 			isa = PBXGroup;
 			children = (
 				838080641C1D5B95000AD4EB /* SwiftExample */,
 				838080701C1D5B95000AD4EB /* SwiftExampleTests */,
-				8350BE321CABA65800CBC398 /* SwiftExampleTests */,
 				838080631C1D5B95000AD4EB /* Products */,
-				8335FC281CAB850900E8FD78 /* Result.framework */,
 				8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */,
+				8335FC281CAB850900E8FD78 /* Result.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,9 +99,10 @@
 		838080701C1D5B95000AD4EB /* SwiftExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				838080711C1D5B95000AD4EB /* SwiftExampleTests.swift */,
-				838080731C1D5B95000AD4EB /* Info.plist */,
+				8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */,
+				8350BE351CABA65800CBC398 /* Info.plist */,
 				838080941C1DA6E0000AD4EB /* PropertyTest.swift */,
+				830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */,
 			);
 			path = SwiftExampleTests;
 			sourceTree = "<group>";
@@ -120,6 +112,7 @@
 			children = (
 				8380807D1C1D6087000AD4EB /* Property.swift */,
 				83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */,
+				830792571D14527900F17A72 /* ProtocolItemInArray.swift */,
 			);
 			name = Generic;
 			sourceTree = "<group>";
@@ -145,6 +138,7 @@
 				8350BE2D1CABA65800CBC398 /* Sources */,
 				8350BE2E1CABA65800CBC398 /* Frameworks */,
 				8350BE2F1CABA65800CBC398 /* Resources */,
+				8301484F1D1588E7004675C5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -216,9 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8350BE3E1CABA8B400CBC398 /* Result.framework in Resources */,
-				8350BE431CABAD0900CBC398 /* SwiftExample.framework in Resources */,
-				8350BE3F1CABA8B400CBC398 /* ReactiveCocoa.framework in Resources */,
+				8301484E1D1588B3004675C5 /* ReactiveCocoa.framework in Resources */,
+				8301484D1D1588AE004675C5 /* Result.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +224,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8301484F1D1588E7004675C5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8350BE2D1CABA65800CBC398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -238,6 +249,7 @@
 			files = (
 				8350BE341CABA65800CBC398 /* SwiftExampleTests.swift in Sources */,
 				8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */,
+				8307925A1D145A1500F17A72 /* ProtocolItemInArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +259,7 @@
 			files = (
 				8380807E1C1D6087000AD4EB /* Property.swift in Sources */,
 				83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */,
+				830792581D14527900F17A72 /* ProtocolItemInArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
