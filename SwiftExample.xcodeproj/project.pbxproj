@@ -18,6 +18,14 @@
 		838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 838080651C1D5B95000AD4EB /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8380807E1C1D6087000AD4EB /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380807D1C1D6087000AD4EB /* Property.swift */; };
 		83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */; };
+		83CE99AC1D38B10E00EEC73B /* KVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99AB1D38B10E00EEC73B /* KVO.swift */; };
+		83CE99AE1D38C26500EEC73B /* KVOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99AD1D38C26500EEC73B /* KVOTests.swift */; };
+		83CE99BC1D3A76E900EEC73B /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99BA1D3A76E900EEC73B /* NSObject+Exception.m */; };
+		83CE99BD1D3A76E900EEC73B /* NSObject+Exception.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99BA1D3A76E900EEC73B /* NSObject+Exception.m */; };
+		83CE99BF1D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99BE1D3A7A7900EEC73B /* ObjcExceptionBridge.swift */; };
+		83CE99C01D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99BE1D3A7A7900EEC73B /* ObjcExceptionBridge.swift */; };
+		83CE99CD1D3B3E3300EEC73B /* NSObject+Exception.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CE99B91D3A76E900EEC73B /* NSObject+Exception.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83CE99D01D3B547300EEC73B /* CatchExceptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE99CE1D3B547300EEC73B /* CatchExceptionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,12 @@
 		8380807D1C1D6087000AD4EB /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Generic/Property.swift; sourceTree = "<group>"; };
 		838080941C1DA6E0000AD4EB /* PropertyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyTest.swift; sourceTree = "<group>"; };
 		83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Generic/Protocol.swift; sourceTree = "<group>"; };
+		83CE99AB1D38B10E00EEC73B /* KVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KVO.swift; path = Objc/KVO.swift; sourceTree = "<group>"; };
+		83CE99AD1D38C26500EEC73B /* KVOTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KVOTests.swift; sourceTree = "<group>"; };
+		83CE99B91D3A76E900EEC73B /* NSObject+Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Exception.h"; path = "Objc/NSObject+Exception.h"; sourceTree = "<group>"; };
+		83CE99BA1D3A76E900EEC73B /* NSObject+Exception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Exception.m"; path = "Objc/NSObject+Exception.m"; sourceTree = "<group>"; };
+		83CE99BE1D3A7A7900EEC73B /* ObjcExceptionBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ObjcExceptionBridge.swift; path = Objc/ObjcExceptionBridge.swift; sourceTree = "<group>"; };
+		83CE99CE1D3B547300EEC73B /* CatchExceptionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatchExceptionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +103,7 @@
 		838080641C1D5B95000AD4EB /* SwiftExample */ = {
 			isa = PBXGroup;
 			children = (
+				83CE99AA1D38B0E000EEC73B /* Objc */,
 				8380807C1C1D6044000AD4EB /* Generic */,
 				838080651C1D5B95000AD4EB /* SwiftExample.h */,
 				838080671C1D5B95000AD4EB /* Info.plist */,
@@ -103,6 +118,8 @@
 				8350BE351CABA65800CBC398 /* Info.plist */,
 				838080941C1DA6E0000AD4EB /* PropertyTest.swift */,
 				830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */,
+				83CE99AD1D38C26500EEC73B /* KVOTests.swift */,
+				83CE99CE1D3B547300EEC73B /* CatchExceptionTests.swift */,
 			);
 			path = SwiftExampleTests;
 			sourceTree = "<group>";
@@ -117,6 +134,17 @@
 			name = Generic;
 			sourceTree = "<group>";
 		};
+		83CE99AA1D38B0E000EEC73B /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				83CE99AB1D38B10E00EEC73B /* KVO.swift */,
+				83CE99B91D3A76E900EEC73B /* NSObject+Exception.h */,
+				83CE99BA1D3A76E900EEC73B /* NSObject+Exception.m */,
+				83CE99BE1D3A7A7900EEC73B /* ObjcExceptionBridge.swift */,
+			);
+			name = Objc;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -125,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */,
+				83CE99CD1D3B3E3300EEC73B /* NSObject+Exception.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CE99BD1D3A76E900EEC73B /* NSObject+Exception.m in Sources */,
+				83CE99AE1D38C26500EEC73B /* KVOTests.swift in Sources */,
 				8350BE341CABA65800CBC398 /* SwiftExampleTests.swift in Sources */,
+				83CE99D01D3B547300EEC73B /* CatchExceptionTests.swift in Sources */,
 				8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */,
+				83CE99C01D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */,
 				8307925A1D145A1500F17A72 /* ProtocolItemInArrayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CE99BC1D3A76E900EEC73B /* NSObject+Exception.m in Sources */,
+				83CE99AC1D38B10E00EEC73B /* KVO.swift in Sources */,
 				8380807E1C1D6087000AD4EB /* Property.swift in Sources */,
 				83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */,
+				83CE99BF1D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */,
 				830792581D14527900F17A72 /* ProtocolItemInArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -288,6 +325,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -295,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +345,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -418,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -443,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};

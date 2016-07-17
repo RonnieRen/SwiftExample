@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 //! Project version number for SwiftExample.
 FOUNDATION_EXPORT double SwiftExampleVersionNumber;
 
@@ -16,4 +17,4 @@ FOUNDATION_EXPORT const unsigned char SwiftExampleVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SwiftExample/PublicHeader.h>
 
-
+#import "NSObject+Exception.h"

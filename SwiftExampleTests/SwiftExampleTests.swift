@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import SwiftExample
+@testable import SwiftExample
 
 
 class SwiftExampleTests: XCTestCase {
@@ -31,10 +31,8 @@ class SwiftExampleTests: XCTestCase {
     }
     
     func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+     
+        
     }
     
     
