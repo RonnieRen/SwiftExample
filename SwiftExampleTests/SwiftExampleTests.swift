@@ -7,6 +7,8 @@
 //
 
 import XCTest
+import Result
+import ReactiveCocoa
 @testable import SwiftExample
 
 
@@ -26,15 +28,39 @@ class SwiftExampleTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
+        let property = MutableProperty(20)
+        do
+        {
+            property.producer.startWithNext { (v) in
+                print("---\(v)")
+            }
+        }
         
+        property.producer.startWithNext { (v) in
+            print("######\(v)")
+        }
+        
+        property.value = 30;
+        
+        print("----")
         
     }
     
     func testPerformanceExample() {
      
+        let a: String? = "abc"
+        let b: String? = nil
+        let c: String? = nil
+        print( a == b)
+        print( b == c )
+        print(a > b )
+        print(b > a)
+        print( b > c)
         
+        print("done")
     }
     
+
     
     
 }

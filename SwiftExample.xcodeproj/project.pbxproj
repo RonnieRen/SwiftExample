@@ -15,6 +15,11 @@
 		8350BE341CABA65800CBC398 /* SwiftExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */; };
 		8350BE411CABA90300CBC398 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8335FC261CAB84E700E8FD78 /* ReactiveCocoa.framework */; };
 		8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838080941C1DA6E0000AD4EB /* PropertyTest.swift */; };
+		83551A5D1D6604110010D69D /* KVOInside.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551A5C1D6604110010D69D /* KVOInside.swift */; };
+		83551AA21D69F7A70010D69D /* DynamicClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 83551AA01D69F7A70010D69D /* DynamicClass.h */; };
+		83551AA31D69F7A70010D69D /* DynamicClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA11D69F7A70010D69D /* DynamicClass.m */; };
+		83551AA51D69F7FF0010D69D /* DynamicClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA11D69F7A70010D69D /* DynamicClass.m */; };
+		83551AA81D69FAF30010D69D /* DynamicClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA71D69FAF30010D69D /* DynamicClassTests.swift */; };
 		838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 838080651C1D5B95000AD4EB /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8380807E1C1D6087000AD4EB /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380807D1C1D6087000AD4EB /* Property.swift */; };
 		83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */; };
@@ -46,6 +51,11 @@
 		8350BE311CABA65800CBC398 /* SwiftExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExampleTests.swift; sourceTree = "<group>"; };
 		8350BE351CABA65800CBC398 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83551A5C1D6604110010D69D /* KVOInside.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KVOInside.swift; path = Objc/KVOInside.swift; sourceTree = "<group>"; };
+		83551AA01D69F7A70010D69D /* DynamicClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicClass.h; path = Objc/DynamicClass.h; sourceTree = "<group>"; };
+		83551AA11D69F7A70010D69D /* DynamicClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicClass.m; path = Objc/DynamicClass.m; sourceTree = "<group>"; };
+		83551AA61D69F90A0010D69D /* SwiftExampleTests-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftExampleTests-Bridge-Header.h"; sourceTree = "<group>"; };
+		83551AA71D69FAF30010D69D /* DynamicClassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicClassTests.swift; sourceTree = "<group>"; };
 		838080621C1D5B95000AD4EB /* SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838080651C1D5B95000AD4EB /* SwiftExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExample.h; sourceTree = "<group>"; };
 		838080671C1D5B95000AD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +130,8 @@
 				830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */,
 				83CE99AD1D38C26500EEC73B /* KVOTests.swift */,
 				83CE99CE1D3B547300EEC73B /* CatchExceptionTests.swift */,
+				83551AA61D69F90A0010D69D /* SwiftExampleTests-Bridge-Header.h */,
+				83551AA71D69FAF30010D69D /* DynamicClassTests.swift */,
 			);
 			path = SwiftExampleTests;
 			sourceTree = "<group>";
@@ -141,6 +153,9 @@
 				83CE99B91D3A76E900EEC73B /* NSObject+Exception.h */,
 				83CE99BA1D3A76E900EEC73B /* NSObject+Exception.m */,
 				83CE99BE1D3A7A7900EEC73B /* ObjcExceptionBridge.swift */,
+				83551A5C1D6604110010D69D /* KVOInside.swift */,
+				83551AA01D69F7A70010D69D /* DynamicClass.h */,
+				83551AA11D69F7A70010D69D /* DynamicClass.m */,
 			);
 			name = Objc;
 			sourceTree = "<group>";
@@ -153,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */,
+				83551AA21D69F7A70010D69D /* DynamicClass.h in Headers */,
 				83CE99CD1D3B3E3300EEC73B /* NSObject+Exception.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +203,7 @@
 				8380805E1C1D5B95000AD4EB /* Frameworks */,
 				8380805F1C1D5B95000AD4EB /* Headers */,
 				838080601C1D5B95000AD4EB /* Resources */,
+				83CE99DA1D3DDA8000EEC73B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -269,6 +286,21 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
+		83CE99DA1D3DDA8000EEC73B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,9 +308,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83551AA51D69F7FF0010D69D /* DynamicClass.m in Sources */,
 				83CE99BD1D3A76E900EEC73B /* NSObject+Exception.m in Sources */,
 				83CE99AE1D38C26500EEC73B /* KVOTests.swift in Sources */,
 				8350BE341CABA65800CBC398 /* SwiftExampleTests.swift in Sources */,
+				83551AA81D69FAF30010D69D /* DynamicClassTests.swift in Sources */,
 				83CE99D01D3B547300EEC73B /* CatchExceptionTests.swift in Sources */,
 				8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */,
 				83CE99C01D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */,
@@ -294,8 +328,10 @@
 				83CE99AC1D38B10E00EEC73B /* KVO.swift in Sources */,
 				8380807E1C1D6087000AD4EB /* Property.swift in Sources */,
 				83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */,
+				83551AA31D69F7A70010D69D /* DynamicClass.m in Sources */,
 				83CE99BF1D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */,
 				830792581D14527900F17A72 /* ProtocolItemInArray.swift in Sources */,
+				83551A5D1D6604110010D69D /* KVOInside.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,7 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftExampleTests/SwiftExampleTests-Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -345,7 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluenight.SwiftExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftExampleTests/SwiftExampleTests-Bridge-Header.h";
 			};
 			name = Release;
 		};
