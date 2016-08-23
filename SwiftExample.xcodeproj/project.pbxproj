@@ -20,6 +20,7 @@
 		83551AA31D69F7A70010D69D /* DynamicClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA11D69F7A70010D69D /* DynamicClass.m */; };
 		83551AA51D69F7FF0010D69D /* DynamicClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA11D69F7A70010D69D /* DynamicClass.m */; };
 		83551AA81D69FAF30010D69D /* DynamicClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551AA71D69FAF30010D69D /* DynamicClassTests.swift */; };
+		83551AD31D6B3E030010D69D /* SortAlgorithmsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551AD21D6B3E030010D69D /* SortAlgorithmsTests.swift */; };
 		838080661C1D5B95000AD4EB /* SwiftExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 838080651C1D5B95000AD4EB /* SwiftExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8380807E1C1D6087000AD4EB /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380807D1C1D6087000AD4EB /* Property.swift */; };
 		83A3F1CD1D1042BF0079E4E3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A3F1CC1D1042BF0079E4E3 /* Protocol.swift */; };
@@ -56,6 +57,7 @@
 		83551AA11D69F7A70010D69D /* DynamicClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicClass.m; path = Objc/DynamicClass.m; sourceTree = "<group>"; };
 		83551AA61D69F90A0010D69D /* SwiftExampleTests-Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftExampleTests-Bridge-Header.h"; sourceTree = "<group>"; };
 		83551AA71D69FAF30010D69D /* DynamicClassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicClassTests.swift; sourceTree = "<group>"; };
+		83551AD21D6B3E030010D69D /* SortAlgorithmsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortAlgorithmsTests.swift; sourceTree = "<group>"; };
 		838080621C1D5B95000AD4EB /* SwiftExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		838080651C1D5B95000AD4EB /* SwiftExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExample.h; sourceTree = "<group>"; };
 		838080671C1D5B95000AD4EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				8350BE331CABA65800CBC398 /* SwiftExampleTests.swift */,
+				83551AD21D6B3E030010D69D /* SortAlgorithmsTests.swift */,
 				8350BE351CABA65800CBC398 /* Info.plist */,
 				838080941C1DA6E0000AD4EB /* PropertyTest.swift */,
 				830792591D145A1500F17A72 /* ProtocolItemInArrayTests.swift */,
@@ -315,6 +318,7 @@
 				83551AA81D69FAF30010D69D /* DynamicClassTests.swift in Sources */,
 				83CE99D01D3B547300EEC73B /* CatchExceptionTests.swift in Sources */,
 				8350BE441CABAD3F00CBC398 /* PropertyTest.swift in Sources */,
+				83551AD31D6B3E030010D69D /* SortAlgorithmsTests.swift in Sources */,
 				83CE99C01D3A7A7900EEC73B /* ObjcExceptionBridge.swift in Sources */,
 				8307925A1D145A1500F17A72 /* ProtocolItemInArrayTests.swift in Sources */,
 			);
